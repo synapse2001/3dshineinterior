@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Emerson | Linktree</title>
+    <!-- Favicon -->
+    <link rel="icon" href="logo_3d_cropped.png" type="image/x-icon" />
+    <!-- Font Awesome icons -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- Core theme CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    
+    <video id="video-background" preload="auto" autoplay="true"  muted="muted">
+      <source src="advert_updated.mp4" type="video/mp4">
+    </video>
+    
+    <!-- Parallax Pixel Background Animation -->
+    <!-- <section class="animated-background">
+      <div id="stars1"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    </section> -->
+    <!-- End of Parallax Pixel Background Animation -->
+    
+
+    <a id="profilePicture" href="#popup">
+      <img src="logo_3d_cropped.png" alt="Company Picture">
+    </a>
+
+    <div class="overlay" id="popup">
+      <div class="popup">
+        <div class="popup-photo">
+          <a href="logo_3d_cropped.png" target="_blank">
+            <img src="logo_3d_cropped.png" alt="Profile Picture">
+          </a>
+        </div>
+        <div class="popup-quote">
+         We have got the state of art interior designing skill to upscale your ambiance.
+        </div>
+        <a class="popup-close" onclick="history.back()">&times;</a>
+      </div>
+    </div>
+
+    <div id="userName">
+      3d shine eye interiors.
+    </div>
+
+    <div id="links">
+      <a class="link" href="tel:+919831650460" target="_blank">
+        <i class="fas fa-phone-alt">&nbsp;</i> Call Us
+      </a>
+      <a class="link"> <button onclick="saveContact()">Save Contact</button> </a>
+      <a class="link" href="https://www.linkedin.com/in/johnggli" target="_blank">
+        <i class="fab fa-linkedin">&nbsp;</i>Linkedin
+      </a>
+      <a class="link" href="https://www.facebook.com/johnggli" target="_blank">
+        <i class="fab fa-facebook">&nbsp;</i>Facebook
+      </a>
+      <a class="link" href="https://www.instagram.com/johnggli" target="_blank">
+        <i class="fab fa-instagram">&nbsp;</i>Instagram
+      </a>
+      <a class="link" href="https://twitter.com/johnggli" target="_blank">
+        <i class="fab fa-twitter">&nbsp;</i>Twitter
+      </a>
+      <a class="link" href="https://myanimelist.net/profile/johnggli" target="_blank">
+        <i class="fa fa-play-circle">&nbsp;</i>MyAnimeList
+      </a>
+    </div>
+
+    <div id="hashtag">
+      #BeHappy❤
+    </div>
+    <script>
+        function saveContact() {
+          var phoneNumber = "+919831650460"; // Replace with your phone number
+          window.location.href = 'content://com.android.contacts/contacts/add?phone=' + encodeURIComponent(phoneNumber);
+        }
+      </script>
+  </body>
+</html>
